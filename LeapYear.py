@@ -1,7 +1,10 @@
 def LeapYearfunc(year):
     if(year % 4== 0):
         if ((year % 100) == 0):
-            return "Leap Year"
+            if ((year % 400) == 0):
+                return (str(year) + " Is a leap year.")
+            else:
+                return ("Not a leap year.")
         else:
             return (str(year) + " Is a leap year.")
     else:
